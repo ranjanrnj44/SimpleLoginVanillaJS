@@ -1,0 +1,73 @@
+/*universal selector start*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: teal;
+}
+/*universal selector end*/
+
+body article{
+    max-width: 850px;
+    height: 600px;
+    margin: 0px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    box-shadow: 3px 3px 30px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    border-right: 4px solid black;
+}
+form i{
+    position: relative;
+    bottom: 40px;
+    left: 75px;
+    color: rgb(72, 57, 51);
+}
+section h2{
+    text-align: center;
+    font-family: Suez One;
+    padding: 20px 0;
+    color: rgb(17, 67, 67);
+}
+section input[type="text"] , section input[type="password"]{
+    width: 250px;
+    height: 50px;
+    margin: 20px 0;
+    background-color: silver;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+section input[type="text"]::placeholder , section input[type="password"]::placeholder{
+    color: rgb(73, 72, 72);
+    text-align: center;
+    font-size: 14px;
+}
+
+section button[type="submit"]{
+    width: 250px;
+    height: 50px;
+    background-color: #4690FB;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+section #error_container{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 18px;
+    color: red;
+    font-style: italic;
+}
